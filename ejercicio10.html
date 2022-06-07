@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre: </label>
+        <input type="text" pattern="[A-ZÑa-zñ]{3,}" id="nombre" name="nombre" required><br>
+        <label for="apellidos">Apellidos: </label>
+        <input id="apellidos" pattern="[A-ZÑa-zñ]+\s[A-ZÑa-zñ\s]+" name="apellidos" type="text" required><br>
+        <label for="email">email: </label>
+        <input id="email" pattern="[a-zñA-ZÑ0-9+_.-]{3,}@[a-zñA-ZÑ0-9+_.-]{5,}\.[A-ZÑa-zñ]{2,3}" name="email" type="text" required><br>
+        <label for="fecha">Fecha de Nacimiento: </label>
+        <input id="fecha" name="fecha" type="date" required><br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
